@@ -1,0 +1,15 @@
+<h1> About </h1>
+
+{{#each model as |m|}}
+
+Name: {{m.title}}
+What is it about: {{m.summary}}
+Total users: {{m.count}}
+{{#if m.fcopyright}}
+  Copyright: {{copyright}}
+{{/if}}
+{{#if m.fauthor}}
+  Author: {{author}}
+{{/if}}
+{{/each}}
+{{tautles-pic}}

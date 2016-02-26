@@ -1,0 +1,13 @@
+<h1> Please login </h1>
+<form {{action 'auth' on='submit'}}>
+  <div>
+    {{input value=username max='50'}}
+  </div>
+  <div>
+    {{input type='password' value=password max='50'}}
+  </div>
+  <button value='submit'> login </button>
+  {{#if loginFailed}}
+    login failed
+  {{/if}}
+</form>
